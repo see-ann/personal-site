@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -6,18 +7,19 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Sean Wang</title>
+		<link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css" />
 	</head>
 	<body>
-		<slot />
+		<main class="container">
+			<div class="row flex-center margin-top-large">
+				<a class="paper-btn margin-right" href="/">Home</a>
+				<a class="paper-btn margin-left" href="/games">Games</a>
+			</div>
+
+			<section class="margin-top-large">
+				<slot />
+			</section>
+		</main>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
